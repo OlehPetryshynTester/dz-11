@@ -1,6 +1,14 @@
 package org.people;
 
 public abstract class Person  {
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
     private String firstName;
     protected String lastName;
     private int age;
@@ -9,9 +17,18 @@ public abstract class Person  {
         return partner;
     }
 
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+
     protected Person partner;
 
     protected String previousLastName;
+
+    public String getLastName() {
+        return lastName;
+    }
 
     public Person(String firstName, String lastName, int age) {
         this.firstName = firstName;
@@ -60,6 +77,10 @@ public abstract class Person  {
 //         this.partner = null;
 //     }
 
+
+    public String getPreviousLastName() {
+        return previousLastName;
+    }
 
 
     public String toString() {

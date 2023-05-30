@@ -12,11 +12,6 @@ public class Woman extends Person {
     }
 
     @Override
-    public Person getPartner() {
-        return super.getPartner();
-    }
-
-    @Override
     public void registerPartnership(Person partner) {
         this.partner = partner;
         Woman woman = this;
